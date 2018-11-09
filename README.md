@@ -1,5 +1,5 @@
 # RadRegionRheinland_Knotensystem
-Here is Point and Line Data for the RadRegionRheinland Knotenpunktsystem extracted from OSM
+Here is Point and Line Data for the RadRegionRheinland Knotenpunktsystem extracted from OSM and extended by elevation Data from SRTM.
 
 
 ## Overpass Query 
@@ -13,9 +13,9 @@ The original search was:
 // gather results
 (
   // query part for: “ref=RRR”
-  node["ref"="RRR"]({{bbox}});
-  way["ref"="RRR"]({{bbox}});
-  relation["ref"="RRR"]({{bbox}});
+  node["ref"="RRR"](50.54, 6.2, 51.22, 7.777);
+  way["ref"="RRR"](50.54, 6.2, 51.22, 7.777);
+  relation["ref"="RRR"](50.54, 6.2, 51.22, 7.777);
 );
 // print results
 out body;
